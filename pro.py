@@ -4,8 +4,10 @@ from linepy import *
 from datetime import datetime, timedelta
 import time, asyncio, json, os, sys, traceback
 #al = LINE('EMAIL', 'PASSWORD')
-al = LINE('YOUR TOKEN')
-li = LINE('YOUR TOKEN')
+al = LINE()
+li = LINE()
+#al = LINE('TOKEN')
+#li = LINE('TOKEN')
 al.log("Auth Token : " + str(al.authToken))
 li.log("Auth Token : " + str(li.authToken))
 alMid = al.getProfile().mid
